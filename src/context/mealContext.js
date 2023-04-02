@@ -1,31 +1,32 @@
-import React,{createContext,useContext,useEffect,useReducer} from "react"
-import { mealReducer } from "../reducers/mealReducer"
+import React, {createContext, useContext, useEffect, useReducer} from "react";
+import { mealReducer } from "../reducers/mealReducer";
 import { startFetchCategories } from "../actions/mealsAction";
-const initialState={
-    categories:[],
-    categoryLoading:false,
-    categoryError:false,
-    categoryMeals:[],
-    categoryMealsLoading:false,
-    categoryMealsError:false,
-    meals:[],
-    mealsLoading:false,
-    mealsError:false,
-    meal:[],
-    mealLoading:false,
-    mealError:false
 
+const initialState = {
+    categories: [],
+    categoryLoading: false,
+    categoryError: false,
+    categoryMeals: [],
+    categoryMealsLoading: false,
+    categoryMealsError: false,
+    meals: [],
+    mealsLoading: false,
+    mealsError: false,
+    meal: [],
+    mealLoading: false,
+    mealError: false
 }
 
 const MealContext = createContext({});
-export const MealProvider=({children})=>{
-    const[state,dispatch]=useReducer(mealReducer,initialState);
+export const MealProvider = ({children}) => {
+    const [state, dispatch] = useReducer(mealReducer, initialState);
 
-    useEffect(()=>{
-     startFetchCategories(dispatch)
-    },[]);
-    return(
-        <MealContext.Provider value={{
+    useEffect(() => {
+        startFetchCategories(dispatch);
+    }, []);
+
+    return (
+        <MealContext.Provider value = {{
             ...state,
             dispatch,
             startFetchCategories
@@ -34,6 +35,7 @@ export const MealProvider=({children})=>{
         </MealContext.Provider>
     )
 }
-export const useMealContext=()=>{
+
+export const useMealContext = () => {
     return useContext(MealContext);
 }
