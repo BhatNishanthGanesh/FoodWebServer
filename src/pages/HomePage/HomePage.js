@@ -1,10 +1,15 @@
 import React from 'react'
-
+import "./HomePage.scss"
+import { useMealContext } from '../../context/mealContext'
+import loader  from '../../components/Loader/Loader';
+import CategoryList from '../../components/Category/CategoryList'
 const HomePage = () => {
+    const {categories,meals,categoryLis,mealsLoading}=useMealContext();
+
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <main className='main-content'>
+     (categoryLoading)? <loader/>:<CategoryList categories = {categories}/>
+    </main>
   )
 }
 
