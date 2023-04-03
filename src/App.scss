@@ -80,6 +80,10 @@ input, textarea, select{
   &-column{ flex-direction: column;}
   &-wrap{flex-wrap: wrap;}
 }
+.flex-row{
+  display: flex;
+  flex-wrap: wrap;
+}
 .align{
   &-center{align-items: center;}
   &-start{align-items: flex-start;}
@@ -168,6 +172,9 @@ input, textarea, select{
     margin-right: auto;
     margin-left: auto;
 }
+.ml-auto{
+    margin-left: auto;
+}
 
 .py-1{padding-top: 4px; padding-bottom: 4px;}
 .py-2{padding-top: 8px; padding-bottom: 8px;}
@@ -198,6 +205,22 @@ input, textarea, select{
 .mx-4{margin-left: 24px; margin-right: 24px;}
 .mx-5{margin-left: 48px; margin-right: 48px;}
 .mx-6{margin-left: 60px; margin-right: 60px;}
+
+.pb-1{padding-bottom: 4px;}
+.pb-2{padding-bottom: 8px;}
+.pb-3{padding-bottom: 16px;}
+.pb-4{padding-bottom: 24px;}
+.pb-5{padding-bottom: 48px;}
+.pb-6{padding-bottom: 60px;}
+.pb-7{padding-bottom: 72px;}
+
+.pt-1{padding-top: 4px;}
+.pt-2{padding-top: 8px;}
+.pt-3{padding-top: 16px;}
+.pt-4{padding-top: 24px;}
+.pt-5{padding-top: 48px;}
+.pt-6{padding-top: 60px;}
+.pt-7{padding-top: 72px;}
 
 // section
 .main-holder{
