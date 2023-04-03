@@ -29,8 +29,8 @@ const CategoryList = ({categories})=> {
                  </div>
               </div>
                   </Link>
-                  <div className='align-center justify-end ml-auto
-                   flex-row ml-auto px-4 pb-7 category-itm-btns__justify-center
+                  <div className='align-center justify-between ml-auto
+                   flex-row ml-auto pb-4 px-2 category-itm-btns__justify-center
                   '>
 
                     <button
