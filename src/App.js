@@ -5,6 +5,7 @@ import {Home,MealDetails,Error,Category} from "./pages/index";
 // Components
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
+import CheckoutPage from './pages/CheckoutPage';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/meal/:id' element={<MealDetails/>}/>
-      <Route path='/meal/category/:name' element={<Category/>}/>
+        <Route path='/meal/category/:name' element={<Category />} />
+        <Route path='/meal/checkout' element={<CheckoutPage />} />
       <Route path='*' element={<Error/>}/>
 
     </Routes>

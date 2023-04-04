@@ -1,0 +1,48 @@
+@import '../../App.scss';
+.checkout-page {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+
+  .checkout-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgray;
+    padding: 10px 0;
+
+    .header-block {
+      width: 23%;
+
+      &:last-child {
+        width: 8%;
+      }
+    }
+  }
+
+  .checkout-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-total {
+    margin-top: 30px;
+    font-size: 36px;
+    text-align: right;
+  }
+
+  .checkout-button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    background-color: $clr-orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $clr-orange;
+    }
+  }
+}
