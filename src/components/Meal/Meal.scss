@@ -15,6 +15,11 @@
         grid-template-columns: repeat(5, 1fr);
     }
 
+    .checkout-btn{
+        background-color: $clr-orange;
+        color: $clr-white;
+    }
+
     .meal-itm{
         box-shadow: rgba(99, 99, 99, 0.09) 0px 2px 8px 0px;
         &-img{

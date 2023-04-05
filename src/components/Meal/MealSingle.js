@@ -72,6 +72,9 @@ const MealSingle=({meal})=> {
                   }
                 </ul>
               </div>
+              <div>
+                <Link to = '/meal/checkout' className='checkout-btn'>Checkout</Link>
+              </div>
             </div>
           </div>
           <div className='details-body'>
