@@ -73,7 +73,21 @@ const MealSingle=({meal})=> {
                 </ul>
               </div>
               <div>
-                <Link to = '/meal/checkout' className='checkout-btn'>Checkout</Link>
+                <Link to='/meal/checkout'
+                  style={{
+                    backgroundColor: meal?.ingredients?.length > 0 ? '#E16120' : '#ccc',
+                    cursor: meal?.ingredients?.length > 0 ? 'pointer' : 'not-allowed',
+                    color: meal?.ingredients?.length > 0 ? '#fff' : '#000',
+                    padding: '10px 20px',
+                    borderRadius: '5px',
+                    textDecoration: 'none',
+                    width: '100%',
+                    hover: {
+                      backgroundColor: '#C5541A',
+                      color: '#fff'
+                    }
+                  }}
+                  className='checkout-btn'>Checkout</Link>
               </div>
             </div>
           </div>
